@@ -1,0 +1,57 @@
+.list__residents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: .5em;
+    padding: 1rem; 
+    gap: 1em;
+}
+
+.card{    
+    background-color: #3E3435;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 80%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .6em;          
+}
+.card:hover .card__status{
+    background-color: #3E3435;
+}
+
+.card__image{
+    position: relative;
+}
+.card__status{
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    z-index: 1000;
+    position: absolute;
+    bottom: 80%;
+    background-color: #3E343580;
+    font-size: 12px;
+    border-radius: 0 5px 5px 0;
+}
+
+.card__estatus-color{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+.Dead{
+    background-color: red;
+}
+
+.Alive{
+    background-color: green;
+}
+
+.unknown{
+    background-color: gray;
+}

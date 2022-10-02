@@ -1,0 +1,7 @@
+.suggestion__item{
+    padding: .5em;
+}
+
+.suggestion__item:hover{
+   background-color: #06292F;
+}
